@@ -1,0 +1,28 @@
+.pokemon-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f1d58;
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+
+}
+
+.pokemon-cards div {
+    flex-basis: 250px;
+    height: 400px;
+    margin: 5px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+h3 {
+    margin: 8px;
+}
