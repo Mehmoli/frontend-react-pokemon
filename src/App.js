@@ -24,7 +24,6 @@ const App = () => {
         const res = await axios.get(currentPageUrl);
         const data = res.data;
         // console.log(res)
-        setLoading(false);
         setNextPageUrl(data.next);
         setPrevPageUrl(data.previous);
         // console.log(data.previous);
@@ -43,6 +42,7 @@ const App = () => {
       } catch (e) {
         console.error(e);
       }
+      setLoading(false);
 
     }
     getAllPokemons();
